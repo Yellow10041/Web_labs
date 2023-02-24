@@ -18,7 +18,6 @@
   margin: 0;
 
   font-family: "Roboto";
-  color: #fff;
 
   background-color: transparent;
 
@@ -28,132 +27,79 @@
 body {
   padding: 50px;
 
-  background-color: rgb(138, 214, 228);
+  background-color: rgb(189, 245, 255);
 }
 
-code,
-kbd,
-samp {
-  padding: 2px 4px;
+.table_list {
+  width: 500px;
 
-  font-family: monospace;
-
-  background-color: rgb(150, 223, 235);
-
-  border-radius: 5px;
+  border-collapse: collapse;
 }
 
-var,
-abbr,
-q,
-cite,
-dfn {
-  padding: 2px 4px;
+.table_list td,
+.table_list th {
+  padding: 5px 10px;
 
-  background-color: rgb(150, 223, 235);
-
-  border-radius: 5px;
+  border: 1px solid #6395ff;
 }
 
-mark {
-  padding: 2px 4px;
-
-  color: #555;
-
-  background-color: mark;
-
-  border-radius: 5px;
+.table_list thead {
+  background-color: #dae1f8;
 }
 
-blockquote {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+.table_list tfoot {
+  color: #fff;
+  text-align: right;
+
+  background-color: #5776b1;
 }
 
-.header {
-  font-size: 42px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.tags {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
+.table_schedule {
+  width: 700px;
   margin-top: 50px;
+
+  border-collapse: collapse;
 }
 
-.tags::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 2%;
-  height: 100%;
-  width: 25px;
-
-  background: linear-gradient(
-    to right,
-    rgb(149, 219, 232) 0%,
-    rgb(154, 227, 239) 50%,
-    rgb(149, 219, 232) 100%
-  );
-
-  z-index: -10;
+.table_schedule th,
+.table_schedule td {
+  padding: 5px 10px;
 }
 
-.tags_item {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-  padding: 20px;
-
-  background: linear-gradient(
-    45deg,
-    rgb(152, 227, 240) 0%,
-    rgb(169, 235, 247) 20%,
-    rgb(138, 214, 228) 100%
-  );
-
-  box-shadow: 0px 0px 50px 0px rgba(167, 235, 247, 0);
-
-  border-radius: 20px;
-
-  transition: 0.2s ease-in-out;
-  transition-property: box-shadow, transform;
+.table_schedule .border,
+.table_schedule .border th {
+  border: 5px solid #6395ff;
 }
 
-.tags_item:hover {
-  box-shadow: 0px 0px 50px 0px rgba(167, 235, 247, 0.5);
-
-  transform: scale(1.01);
-  transform: scale(0.99);
-  transform: translateX(5px);
+.table_schedule td.border {
+  border: 1px solid #6395ff;
 }
 
-.tags_item_title {
-  font-size: 28px;
+.table_schedule td.border.bottom {
+  border: unset;
+  border-bottom: 1px solid #6395ff;
 }
 
-.tags_item_title span {
-  padding: 2px 4px;
-
-  font-weight: 700;
-
-  background-color: rgb(150, 223, 235);
-
-  border-radius: 5px;
+.table_schedule .border.right {
+  border-width: 1px;
+  border-right: unset;
 }
 
-.tags_item_preview {
-  font-size: 18px;
+.table_schedule .border.left {
+  border-width: 1px;
+
+  border-left-style: dashed;
 }
 
-.tags_item_preview hr {
-  height: 2px;
-  margin: 10px 0;
+.text-v {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
 
-  background-color: rgba(255, 254, 254, 0.3);
+.green {
+  background-color: #e2efda;
+}
+
+.blue {
+  background-color: #d9e1f2;
 }
